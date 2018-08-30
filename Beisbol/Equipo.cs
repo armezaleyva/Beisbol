@@ -10,6 +10,7 @@ namespace Beisbol {
         public string Ciudad { get; set; }
         public string Entrenador { get; set; }
         public List<Jugador> Jugadores { get; set; }
+        public Estadio EstadioEquipo { get; set; }
 
         public Equipo() {
             Nombre = "Nuevo Equipo";

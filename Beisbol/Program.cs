@@ -53,11 +53,16 @@ namespace Beisbol {
                     equipo.Jugadores[i].Numero = numeros[index];
                 }
             }
+            equipos[0].EstadioEquipo = new Estadio();
+            equipos[0].EstadioEquipo.Nombre = "Tomás Oroz Gaytán";
             foreach (Equipo equipo in equipos) {
                 Console.WriteLine("\nEquipo: " + equipo.Nombre);
                 foreach (Jugador jugador in equipo.Jugadores) {
                     Console.WriteLine("Jugador: " + jugador.Nombre);
                     Console.WriteLine("Numero de Jugador: " + jugador.Numero);
+                }
+                if (equipo.EstadioEquipo != null) {
+                    Console.WriteLine("Nombre del Estadio: " + equipo.EstadioEquipo.Nombre);
                 }
             }
             Console.ReadKey();
